@@ -44,7 +44,7 @@ $(function() {
         var m = today.getMinutes();
         var s = today.getSeconds();
         var sf = parseFloat(s/60);
-        var hf = parseFloat(h/24);
+        var hf = parseFloat((h-12)/12);
         var mf = parseFloat(m/60);
 
         // $('#second-text').html(s);
