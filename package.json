@@ -11,6 +11,8 @@
   "dependencies": {
     "express": "^4.16.3",
     "helmet": "^3.12.0",
+    "jquery-circle-progress": "^1.2.2",
+    "particlesjs": "^2.2.2",
     "serve-favicon": "^2.4.5"
   }
 }

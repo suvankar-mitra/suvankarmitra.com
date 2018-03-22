@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="/static/css/terminal.css">
     <link rel="stylesheet" href="/static/css/cursor.css">
 </head>
-<body class="bg" id="body">
-
+<body class="bg">
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <div class="header-box">
@@ -34,6 +33,7 @@
             </div>
         </div>
     </nav>
+    <div id="particles-js"></div>
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
             <div>
@@ -48,88 +48,103 @@
         <div id="yellow"></div>
         <div id="green"></div>
         <div id="head"><b>root@localhost:~</b></div>
-    </div>
-    <div id="screen">
-            <p class="font">
-                <span class="prompt">root@localhost:~# </span>whoami
-                <br>
-                suvankar-mitra
-                <br>
-                <span class="prompt">root@localhost:~# </span>cat README
-                <span id="readme" hidden="hidden">
-                <br>
-                {
+    </div id="container">
+        <div id="screen">
+                <p class="font">
+                    <span class="prompt">root@localhost:~# </span>whoami
                     <br>
-                    &nbsp;&nbsp;<span class="key">"name"</span>: "Suvankar Mitra",
+                    suvankar-mitra
                     <br>
-                    &nbsp;&nbsp;<span class="key">"email"</span>: "<a href="mailto:suvankarmitra.me@gmail.com" target="_top">suvankarmitra.me@gmail.com</a>",
+                    <span class="prompt">root@localhost:~# </span>cat README
+                    <span id="readme" hidden="hidden">
                     <br>
-                    &nbsp;&nbsp;<span class="key">"experience"</span>: {
+                    {
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"organization"</span>: "Infosys Limited",
+                        &nbsp;&nbsp;<span class="key">"name"</span>: "Suvankar Mitra",
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"from"</span>: "August 2015",
+                        &nbsp;&nbsp;<span class="key">"email"</span>: "<a href="mailto:suvankarmitra.me@gmail.com" target="_top">suvankarmitra.me@gmail.com</a>",
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"to"</span>: "present",
+                        &nbsp;&nbsp;<span class="key">"experience"</span>: {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"organization"</span>: "Infosys Limited",
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"from"</span>: "August 2015",
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"to"</span>: "present",
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"designation"</span>: "Senior Systems Engineer",
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"domain"</span>: "Financial services"
+                            <br>
+                        &nbsp;&nbsp;},
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"designation"</span>: "Senior Systems Engineer",
+                        &nbsp;&nbsp;<span class="key">"qualifications"</span>: [{
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"post-graduate"</span>: {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"degree"</span>: "Master of Computer Application",
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"year-of-passout"</span>: "2015",
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"CGPA"</span>: "9.13"
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;},
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"under-graduate"</span>: {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"degree"</span>: "Bachelor of Science (Math Hons.)",
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"year-of-passout"</span>: "2012",
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"percentage"</span>: "73.75%"
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>
+                            &nbsp;&nbsp;}],
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"domain"</span>: "Financial services"
+                        &nbsp;&nbsp;<span class="key">"country"</span>: "India",
                         <br>
-                    &nbsp;&nbsp;},
+                        &nbsp;&nbsp;<span class="key">"state"</span>: "Karnataka",
+                        <br>
+                        &nbsp;&nbsp;<span class="key">"city"</span>: "Bangalore"
+                        <br>
+                    }
                     <br>
-                    &nbsp;&nbsp;<span class="key">"qualifications"</span>: [{
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"post-graduate"</span>: {
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"degree"</span>: "Master of Computer Application",
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"year-of-passout"</span>: "2015",
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"CGPA"</span>: "9.13"
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"under-graduate"</span>: {
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"degree"</span>: "Bachelor of Science (Math Hons.)",
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"year-of-passout"</span>: "2012",
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"percentage"</span>: "73.75%"
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}
-                        <br>
-                        &nbsp;&nbsp;}],
-                    <br>
-                    &nbsp;&nbsp;<span class="key">"country"</span>: "India",
-                    <br>
-                    &nbsp;&nbsp;<span class="key">"state"</span>: "Karnataka",
-                    <br>
-                    &nbsp;&nbsp;<span class="key">"city"</span>: "Bangalore"
-                    <br>
-                }
-                <br>
-                <span class="prompt">root@localhost:~# </span>
-                </span>
-                <span class="blinking-cursor"><b>_</b></span>
-            </p>
-    </div> 
+                    <span class="prompt">root@localhost:~# </span>
+                    </span>
+                    <span class="blinking-cursor"><b>_</b></span>
+                </p>
+        </div> 
 
-    <div class="container alert alert-success alert-dismissible fade show text-center font-normal" 
-        role="alert" style="width: 20%; font-size: 14px" id="press-enter">
-        Press the 'enter' &crarr; key
-        <button type="button " class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
+        <div class="container alert alert-success alert-dismissible fade show text-center font-normal" 
+            role="alert" style="width: 20%; font-size: 14px" id="press-enter">
+            Press the 'enter' &crarr; key
+            <button type="button " class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
 
+        <div class="">
+            <div class="circle" id="circle-h">
+                <strong id="hour-text"></strong>
+            </div>
+            <div class="circle" id="circle-m">
+                    <strong id="minute-text"></strong>
+            </div>
+            <div class="circle" id="circle-s">
+                    <strong id="second-text"></strong>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="/static/js/particles.min.js"></script>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/static/js/jquery-slim.min.js"><\/script>')</script>
 <script src="/static/js/popper.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/static/js/circle-progress.min.js"></script>
 <script src="/static/js/home.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
