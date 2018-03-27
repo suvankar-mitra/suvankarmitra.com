@@ -150,9 +150,3 @@ html {
     line-height: 15px;
     font-size: 13px;
 }
-
-.clock {
-    position: fixed; 
-    bottom: 25px;
-    right: 25px;
-}
